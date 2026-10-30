@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In — MindCare AI</title>
+<meta name="description" content="Sign in to your private MindCare AI health vault to view screening history, encrypted journal, and doctor consultations.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header" id="site-header"></header>
+
+<main class="section">
+  <div class="container" style="max-width:480px;">
+    <div class="card card-glow-teal" style="padding:36px;">
+      <div style="text-align:center;margin-bottom:24px;">
+        <div class="eyebrow">Encrypted Health Vault</div>
+        <h2>Sign In to MindCare</h2>
+        <p style="font-size:0.88rem;color:var(--text-muted);margin:0;">Access your private screening history and encrypted journal.</p>
+      </div>
+
+      <form id="login-form">
+        <div class="field">
+          <label for="email">Registered Email Address</label>
+          <input id="email" type="email" placeholder="name@example.com" required autocomplete="email">
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="••••••••" required autocomplete="current-password">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;margin-top:8px;" id="login-submit">
+          Sign In to Portal
+        </button>
+
+        <div style="text-align:center;font-size:0.86rem;margin-top:20px;color:var(--text-secondary);">
+          Don't have an account yet? <a href="signup.html">Create your secure account</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/auth.js"></script>
+</body>
+</html>

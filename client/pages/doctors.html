@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verified Doctor &amp; Clinic Directory — MindCare AI</title>
+<meta name="description" content="Find verified psychiatrists, clinical psychologists, and therapists across India with interactive GPS proximity search and NMC registry verification.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header" id="site-header"></header>
+
+<main class="section-tight">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px;margin-bottom:20px;">
+      <div>
+        <div class="eyebrow">GPS Proximity &amp; NMC Registry Verification</div>
+        <h2>Find Mental Health Specialists Near You</h2>
+        <p style="margin:0;">Every specialist is cross-referenced with medical registers. Sponsored listings are never artificially boosted.</p>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center;">
+        <button class="btn btn-primary btn-sm" id="use-location-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="12 2 15 8 12 6 9 8 12 2"/></svg>
+          Use My GPS Location
+        </button>
+      </div>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <input type="search" id="q" placeholder="Search by doctor or clinic name…">
+      
+      <select id="specialty">
+        <option value="">All Specialties</option>
+        <option value="Psychiatrist">Psychiatrist</option>
+        <option value="Clinical Psychologist">Clinical Psychologist</option>
+        <option value="Neuropsychiatrist">Neuropsychiatrist</option>
+        <option value="Counsellor">Counsellor / Therapist</option>
+      </select>
+
+      <select id="city">
+        <option value="">All Indian Cities</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Delhi">New Delhi / NCR</option>
+        <option value="Bengaluru">Bengaluru</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Pune">Pune</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Kochi">Kochi</option>
+        <option value="Jaipur">Jaipur</option>
+        <option value="Lucknow">Lucknow</option>
+        <option value="Chandigarh">Chandigarh</option>
+        <option value="Ahmedabad">Ahmedabad</option>
+      </select>
+
+      <select id="modality">
+        <option value="">Any Consultation Mode</option>
+        <option value="in_person">In-Person Clinic</option>
+        <option value="teleconsultation">Online Video / Teleconsultation</option>
+      </select>
+
+      <div style="display:flex;align-items:center;gap:8px;">
+        <label for="radius" style="font-size:0.8rem;color:var(--text-secondary);white-space:nowrap;">Radius:</label>
+        <select id="radius" style="min-width:100px;">
+          <option value="25">25 km</option>
+          <option value="50" selected>50 km</option>
+          <option value="100">100 km</option>
+          <option value="500">500 km</option>
+        </select>
+      </div>
+
+      <button class="btn btn-outline-teal btn-sm" id="search-btn">Apply Filters</button>
+    </div>
+
+    <!-- Status feedback -->
+    <div id="location-status" style="font-size:0.86rem;color:var(--text-secondary);margin-bottom:16px;display:flex;align-items:center;gap:8px;">
+      <span>Showing verified directory listings across India.</span>
+    </div>
+
+    <!-- Two-Column Doctor + Map Layout -->
+    <div class="doctor-layout">
+      <!-- Doctor Cards List -->
+      <div id="doctors-mount" style="overflow-y:auto;max-height:750px;padding-right:6px;">
+        <div class="card" style="text-align:center;padding:40px;">
+          <p>Loading verified specialists…</p>
+        </div>
+      </div>
+
+      <!-- Leaflet Interactive Map -->
+      <div>
+        <div id="map-container"></div>
+        <div style="font-size:0.78rem;color:var(--text-muted);margin-top:8px;text-align:right;">
+          Interactive OpenStreetMap · GPS distance calculated using Haversine algorithm
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/doctors.js"></script>
+</body>
+</html>

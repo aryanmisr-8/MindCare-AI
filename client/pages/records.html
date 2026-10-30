@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinical Records &amp; Prescription Locker — MindCare AI</title>
+<meta name="description" content="DPDP 2023 compliant personal health record locker. Store clinical reports, prescriptions, and consult notes with granular sharing controls.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header" id="site-header"></header>
+
+<main class="section-tight">
+  <div class="container" style="max-width:860px;">
+    <div style="margin-bottom:24px;">
+      <div class="eyebrow">DPDP 2023 Compliant · Isolated Medical Storage</div>
+      <h2>Clinical Record &amp; Prescription Locker</h2>
+      <p style="margin:0;">
+        Personal vault for diagnostic reports, psychiatric prescriptions, and discharge summaries. 
+        Records remain private to your account by default until you explicitly authorize clinician sharing.
+      </p>
+    </div>
+
+    <!-- Record Upload / Reference Card -->
+    <div class="card card-glow-teal" style="padding:28px;margin-bottom:32px;">
+      <h3 style="margin-bottom:16px;">Add Clinical Document Reference</h3>
+      <form id="record-form">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+          <div class="field">
+            <label for="recordType">Document Type</label>
+            <select id="recordType" required>
+              <option value="prescription">Psychiatric Prescription</option>
+              <option value="report">Diagnostic / Pathology Report</option>
+              <option value="discharge_summary">Hospital Discharge Summary</option>
+              <option value="clinician_note">Therapist / Clinician Note</option>
+              <option value="other">Other Health Record</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="source">Issuing Hospital / Clinic / Provider</label>
+            <input type="text" id="source" placeholder="e.g. NIMHANS Bengaluru, Fortis Health">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="fileName">Document File Name / Storage Pointer</label>
+          <input type="text" id="fileName" placeholder="e.g. prescription_escitalopram_sep2026.pdf" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="save-record-btn">
+          Save Record to Vault
+        </button>
+      </form>
+    </div>
+
+    <!-- Active Records Section -->
+    <section class="section-tight">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+        <h3>Your Stored Clinical Records</h3>
+        <span style="font-size:0.8rem;color:var(--text-muted);">Encrypted metadata ledger</span>
+      </div>
+
+      <div id="records-mount" style="display:flex;flex-direction:column;gap:14px;">
+        <div class="card" style="text-align:center;padding:36px;color:var(--text-muted);">
+          Loading clinical records…
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/records.js"></script>
+</body>
+</html>

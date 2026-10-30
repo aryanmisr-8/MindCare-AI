@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peer-Reviewed Research Library — MindCare AI</title>
+<meta name="description" content="Explore peer-reviewed psychiatric studies, meta-analyses, and clinical trials on Indian mental health, depression, and digital therapeutics.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header" id="site-header"></header>
+
+<main class="section-tight">
+  <div class="container" style="max-width:960px;">
+    <div style="margin-bottom:24px;">
+      <div class="eyebrow">Evidence-Grounded Scientific Repository</div>
+      <h2>Peer-Reviewed Research &amp; Clinical Trials</h2>
+      <p style="margin:0;">
+        Every paper catalogued here is indexed with its study design, population size, limitations, and plain-language findings.
+      </p>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <input type="search" id="q" placeholder="Search by topic, author, or keyword (e.g. Tele-MANAS, SSRI)…">
+      
+      <select id="condition">
+        <option value="">All Clinical Conditions</option>
+        <option value="depression">Depression</option>
+        <option value="anxiety">Anxiety</option>
+        <option value="stress">Stress &amp; Burnout</option>
+        <option value="crisis">Crisis Intervention</option>
+      </select>
+
+      <select id="type">
+        <option value="">All Evidence Types</option>
+        <option value="meta_analysis">Meta-Analysis (Level 1)</option>
+        <option value="systematic_review">Systematic Review</option>
+        <option value="rct">Randomized Controlled Trial (RCT)</option>
+        <option value="cohort_study">Epidemiological Cohort Study</option>
+        <option value="guideline">Clinical Practice Guideline</option>
+      </select>
+
+      <button class="btn btn-primary btn-sm" id="search-btn">Search Library</button>
+    </div>
+
+    <!-- Papers Mount -->
+    <div id="papers-mount" style="display:flex;flex-direction:column;gap:18px;">
+      <div class="card" style="text-align:center;padding:40px;">
+        <p>Loading peer-reviewed literature…</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/research.js"></script>
+</body>
+</html>

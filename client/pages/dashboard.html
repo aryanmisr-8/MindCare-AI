@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinical Dashboard — MindCare AI</title>
+<meta name="description" content="Personal mental health clinical dashboard tracking screening trends, mood fluctuations, and verified care navigation.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header" id="site-header"></header>
+
+<main class="section-tight">
+  <div class="container">
+    <!-- Patient Profile Header -->
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px;margin-bottom:28px;">
+      <div>
+        <div class="eyebrow">Personal Health Vault &amp; Metrics</div>
+        <h2 id="welcome-heading">Clinical Overview</h2>
+        <p style="margin:0;">
+          Confidential tracking of your psychometric assessments, emotional trajectories, and care linkages.
+        </p>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <a href="screening.html" class="btn btn-primary btn-sm">+ New Screening</a>
+        <a href="journal.html" class="btn btn-ghost btn-sm">Daily Check-In</a>
+      </div>
+    </div>
+
+    <!-- Quick Metrics Overview Grid -->
+    <div class="grid-3" style="margin-bottom:32px;">
+      <!-- Latest Screening Card -->
+      <div class="card card-glow-teal">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+          <span class="pill pill-teal">Latest Assessment</span>
+          <span style="font-size:0.75rem;color:var(--text-muted);" id="screening-date">—</span>
+        </div>
+        <div id="latest-screening" style="min-height:90px;display:flex;flex-direction:column;justify-content:center;">
+          <p style="color:var(--text-muted);">Loading assessment…</p>
+        </div>
+        <div style="margin-top:16px;padding-top:12px;border-top:1px solid var(--line);">
+          <a href="screening.html" class="btn btn-outline-teal btn-sm" style="width:100%;">Take Assessment &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Mood & Longitudinal Trend Card -->
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+          <span class="pill pill-community">Longitudinal Trend</span>
+          <span style="font-size:0.75rem;color:var(--text-muted);">Mood Metric</span>
+        </div>
+        <div id="mood-trend" style="min-height:90px;display:flex;flex-direction:column;justify-content:center;">
+          <p style="color:var(--text-muted);">Calculating trajectory…</p>
+        </div>
+        <div style="margin-top:16px;padding-top:12px;border-top:1px solid var(--line);">
+          <a href="journal.html" class="btn btn-ghost btn-sm" style="width:100%;">Reflective Journal &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Care Navigation Hub Card -->
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+          <span class="pill pill-claimed">Care Navigation</span>
+          <span style="font-size:0.75rem;color:var(--text-muted);">Pan-India</span>
+        </div>
+        <div style="min-height:90px;">
+          <h4 style="margin-bottom:6px;">Specialist &amp; Medicine Links</h4>
+          <p style="font-size:0.86rem;margin-bottom:10px;">
+            Find verified psychiatrists in your city or check Jan Aushadhi generic pricing.
+          </p>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:16px;padding-top:12px;border-top:1px solid var(--line);">
+          <a href="doctors.html" class="btn btn-ghost btn-sm" style="flex:1;">GPS Doctors</a>
+          <a href="medicines.html" class="btn btn-ghost btn-sm" style="flex:1;">Medicines</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sessions History Table -->
+    <section class="section-tight">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+        <h3>Psychometric Assessment History</h3>
+        <span style="font-size:0.82rem;color:var(--text-muted);">Historical records preserved for clinical consultation</span>
+      </div>
+
+      <div class="table-container">
+        <table id="sessions-table">
+          <thead>
+            <tr>
+              <th>Instrument Code</th>
+              <th>Total Score</th>
+              <th>Clinical Severity Band</th>
+              <th>Risk Flag</th>
+              <th>Assessment Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td colspan="5" style="text-align:center;padding:24px;color:var(--text-muted);">Loading sessions…</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Your Secure Account — MindCare AI</title>
+<meta name="description" content="Register for a private MindCare AI health account with granular purpose-limited consent under India's DPDP Act 2023.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header" id="site-header"></header>
+
+<main class="section">
+  <div class="container" style="max-width:540px;">
+    <div class="card card-glow-teal" style="padding:36px;">
+      <div style="text-align:center;margin-bottom:24px;">
+        <div class="eyebrow">DPDP Act 2023 Compliant</div>
+        <h2>Create Your Health Account</h2>
+        <p style="font-size:0.88rem;color:var(--text-muted);margin:0;">
+          Your medical records and journal are cryptographically isolated from your identity.
+        </p>
+      </div>
+
+      <form id="signup-form">
+        <div class="field">
+          <label for="displayName">Full Name or Preferred Alias</label>
+          <input id="displayName" type="text" placeholder="Dr. / Mr. / Ms. Name" required autocomplete="name">
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input id="email" type="email" placeholder="name@example.com" required autocomplete="email">
+        </div>
+
+        <div class="field">
+          <label for="state">State in India (localizes care navigation)</label>
+          <select id="state">
+            <option value="">Select your state</option>
+            <option>Maharashtra</option>
+            <option>Delhi</option>
+            <option>Karnataka</option>
+            <option>Tamil Nadu</option>
+            <option>Telangana</option>
+            <option>West Bengal</option>
+            <option>Kerala</option>
+            <option>Gujarat</option>
+            <option>Rajasthan</option>
+            <option>Uttar Pradesh</option>
+            <option>Haryana</option>
+            <option>Punjab</option>
+            <option>Other State / UT</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="password">Password (Minimum 8 characters)</label>
+          <input id="password" type="password" minlength="8" placeholder="••••••••" required autocomplete="new-password">
+        </div>
+
+        <div style="margin:24px 0 16px;padding-top:16px;border-top:1px solid var(--line);">
+          <h4 style="margin-bottom:8px;font-size:0.92rem;color:var(--accent-primary);">
+            Purpose-Limited Consent (DPDP Act 2023)
+          </h4>
+          <p style="font-size:0.78rem;color:var(--text-muted);margin-bottom:14px;">
+            Select only the capabilities you wish to enable. You can modify or revoke these anytime.
+          </p>
+
+          <div style="display:flex;flex-direction:column;gap:10px;font-size:0.88rem;">
+            <label style="display:flex;align-items:center;gap:10px;cursor:pointer;">
+              <input type="checkbox" id="c-screening" checked style="accent-color:var(--accent-primary);">
+              <span>Validated screening tools (PHQ-9, GAD-7)</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:10px;cursor:pointer;">
+              <input type="checkbox" id="c-journaling" checked style="accent-color:var(--accent-primary);">
+              <span>AES-256 encrypted private journaling</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:10px;cursor:pointer;">
+              <input type="checkbox" id="c-gps" checked style="accent-color:var(--accent-primary);">
+              <span>GPS proximity search for nearby specialists</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:10px;cursor:pointer;">
+              <input type="checkbox" id="c-research" checked style="accent-color:var(--accent-primary);">
+              <span>Peer-reviewed evidence library</span>
+            </label>
+            <label style="display:flex;align-items:center;gap:10px;cursor:pointer;">
+              <input type="checkbox" id="c-records" checked style="accent-color:var(--accent-primary);">
+              <span>Encrypted past medical records vault</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;margin-top:12px;" id="signup-submit">
+          Create Account &amp; Proceed
+        </button>
+
+        <div style="text-align:center;font-size:0.86rem;margin-top:20px;color:var(--text-secondary);">
+          Already registered? <a href="login.html">Sign in here</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/auth.js"></script>
+</body>
+</html>

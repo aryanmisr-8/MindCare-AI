@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy &amp; Data Protection (DPDP Act 2023) — MindCare AI</title>
+<meta name="description" content="MindCare AI data protection principles compliant with the Digital Personal Data Protection Act, 2023. Purpose limitation, data isolation, and consent revocation.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header" id="site-header"></header>
+
+<main class="section-tight">
+  <div class="container" style="max-width:900px;">
+    <div style="margin-bottom:24px;">
+      <div class="eyebrow">DPDP Act 2023 Statutory Architecture</div>
+      <h2>Privacy &amp; Clinical Data Protection</h2>
+      <p style="margin:0;">
+        Engineered specifically for the Indian regulatory framework. Built on purpose-limited consent, 
+        cryptographic table partitioning, and an effortless mechanism to revoke access at any time.
+      </p>
+    </div>
+
+    <!-- 4 Security & Privacy Pillars -->
+    <div class="grid-2" style="margin-bottom:36px;">
+      <div class="card card-glow-teal">
+        <h3 style="color:var(--accent-primary);margin-bottom:8px;">Identity Isolation</h3>
+        <p style="font-size:0.9rem;margin:0;">
+          Your login identity (email, password hash) resides in a distinct partitioned database table. 
+          Screenings, records, and journal entries reference only an opaque cryptographic UUID that cannot be reversed by external breaches.
+        </p>
+      </div>
+
+      <div class="card card-glow-teal">
+        <h3 style="color:var(--accent-cyan);margin-bottom:8px;">AES-256 Envelope Encryption</h3>
+        <p style="font-size:0.9rem;margin:0;">
+          Reflective free text written in your personal journal is encrypted client-to-server with AES-256-GCM. 
+          Plain text is never persisted to unencrypted disk or exposed to background analytics.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 style="color:#38bdf8;margin-bottom:8px;">Zero Commercial Data Exploitation</h3>
+        <p style="font-size:0.9rem;margin:0;">
+          MindCare AI has no third-party tracking scripts, advertising trackers, or telemetry brokers. 
+          Your mental health symptoms and scores are never traded or monetized.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 style="color:#a78bfa;margin-bottom:8px;">Absolute Revocation &amp; Erasure</h3>
+        <p style="font-size:0.9rem;margin:0;">
+          Under Section 6(4) of the DPDP Act 2023, you maintain the fundamental right to revoke any consent purpose 
+          with the exact ease that it was granted.
+        </p>
+      </div>
+    </div>
+
+    <!-- Active Consent Settings Panel -->
+    <section class="card" id="consent" style="padding:32px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;">
+        <div>
+          <h3>Your Purpose-Limited Consent Ledger</h3>
+          <p style="font-size:0.86rem;color:var(--text-muted);margin:0;">
+            Toggle specific processing permissions. Changes take effect across the API instantaneously.
+          </p>
+        </div>
+        <span class="pill pill-teal">DPDP Act §6</span>
+      </div>
+
+      <div id="consent-mount">
+        <p style="color:var(--text-muted);">Loading consent settings…</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/privacy.js"></script>
+</body>
+</html>

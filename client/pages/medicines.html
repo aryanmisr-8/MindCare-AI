@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psychiatric Medicine Directory &amp; NPPA Pricing — MindCare AI</title>
+<meta name="description" content="Explore psychiatric medications across major Indian pharmaceutical companies, comparing brand MRPs with Jan Aushadhi generic prices.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header" id="site-header"></header>
+
+<main class="section-tight">
+  <div class="container">
+    <div style="margin-bottom:24px;">
+      <div class="eyebrow">Multi-Company Directory · NPPA &amp; Jan Aushadhi Benchmarking</div>
+      <h2>Psychiatric Medicine &amp; Generic Price Directory</h2>
+      <p style="margin:0;">
+        Transparent formulation data across leading Indian manufacturers. Compare brand prices with government Jan Aushadhi generic alternatives.
+      </p>
+    </div>
+
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <input type="search" id="q" placeholder="Search generic, brand name or molecule…">
+      
+      <select id="company-filter">
+        <option value="">All Pharmaceutical Companies</option>
+        <!-- Populated dynamically via API -->
+      </select>
+
+      <select id="category-filter">
+        <option value="">All Therapeutic Classes</option>
+        <option value="SSRI">SSRIs (Selective Serotonin Reuptake Inhibitors)</option>
+        <option value="SNRI">SNRIs (Serotonin-Norepinephrine Reuptake Inhibitors)</option>
+        <option value="Atypical Antidepressant">Atypical Antidepressants</option>
+        <option value="Anxiolytic">Anxiolytics / Benzodiazepines</option>
+        <option value="Mood Stabilizer">Mood Stabilizers</option>
+        <option value="Antipsychotic">Atypical Antipsychotics</option>
+      </select>
+
+      <select id="form-filter" style="max-width:140px;">
+        <option value="">All Forms</option>
+        <option value="Tablet">Tablets</option>
+        <option value="Capsule">Capsules</option>
+      </select>
+
+      <button class="btn btn-primary btn-sm" id="search-btn">Search Catalog</button>
+    </div>
+
+    <!-- Medical Disclaimer -->
+    <div class="disclaimer-box" id="medicine-disclaimer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00e5bf" stroke-width="2" style="flex-shrink:0;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      <div>
+        <b>Clinical Prescribing Advisory:</b> Schedule H &amp; H1 medications require a valid physical or digital prescription from a registered medical practitioner. Never self-prescribe, stop, or substitute medications without direct clinical oversight.
+      </div>
+    </div>
+
+    <!-- Medicines Table Container -->
+    <div class="table-container">
+      <table id="medicine-table">
+        <thead>
+          <tr>
+            <th>Generic Formulation</th>
+            <th>Brand Name</th>
+            <th>Manufacturer / Marketer</th>
+            <th>Class</th>
+            <th>Strength &amp; Pack</th>
+            <th>Schedule</th>
+            <th>Jan Aushadhi Generic</th>
+            <th>Brand MRP</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="9" style="text-align:center;padding:36px;color:var(--text-muted);">
+              Loading medicine formulations…
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Pricing Comparison Modal -->
+    <div id="price-modal" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.75);backdrop-filter:blur(8px);z-index:9999;align-items:center;justify-content:center;padding:20px;">
+      <div class="card" style="max-width:600px;width:100%;border-color:var(--accent-primary);position:relative;">
+        <button id="close-modal" style="position:absolute;top:16px;right:16px;background:none;border:none;color:var(--text-muted);font-size:1.4rem;cursor:pointer;">&times;</button>
+        <h3 id="modal-med-title" style="color:var(--accent-primary);margin-bottom:4px;"></h3>
+        <p id="modal-med-sub" style="font-size:0.86rem;margin-bottom:16px;"></p>
+        
+        <div id="modal-prices-mount">Loading price breakdown…</div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/medicines.js"></script>
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MindCare AI — Clinical Mental Health Care Navigation for India</title>
+<meta name="description" content="Evidence-based mental health care navigation platform for India. Validated PHQ-9 & GAD-7 screening, GPS doctor directory, multi-company medicine pricing, and DPDP 2023 compliance.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header" id="site-header"></header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">
+          <span class="live-beacon" style="background:#00e5bf;box-shadow:0 0 8px #00e5bf;"></span>
+          Care Navigation · Not a Diagnostic Substitute
+        </div>
+        <h1>Evidence-Grounded Mental Health Navigation for India.</h1>
+        <p>
+          A unified, privacy-first clinical companion. Complete validated PHQ-9 and GAD-7 assessments, 
+          locate NMC-verified psychiatrists via interactive GPS maps, transparently compare medicine pricing 
+          across Indian pharmaceutical companies, and maintain a client-side encrypted health journal.
+        </p>
+        <div class="hero-actions">
+          <a href="screening.html" class="btn btn-primary btn-lg">
+            Take a Screening Tool
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="doctors.html" class="btn btn-ghost btn-lg">
+            Find Specialists Nearby
+          </a>
+          <a href="medicines.html" class="btn btn-outline-teal btn-lg">
+            Explore Medicine Directory
+          </a>
+        </div>
+      </div>
+
+      <!-- Interactive Quick Assessment Preview Card -->
+      <div class="card" style="background:#FFFFFF;border:1px solid var(--line);">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+          <span class="pill pill-teal">Validated Instruments</span>
+          <span style="font-size:0.8rem;color:var(--ink-400);">Free · Confidential</span>
+        </div>
+        <h3 style="margin-bottom:8px;">Standardized Screening Tools</h3>
+        <p style="font-size:0.9rem;margin-bottom:20px;">
+          Evaluate clinical depression and anxiety patterns with globally recognized assessment scales:
+        </p>
+        
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:24px;">
+          <div style="background:var(--sand-050);padding:12px 16px;border-radius:var(--radius-sm);border:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;">
+            <div>
+              <b style="color:var(--ink-900);">PHQ-9</b>
+              <div style="font-size:0.78rem;color:var(--ink-600);">Patient Health Questionnaire (Depression)</div>
+            </div>
+            <a href="screening.html" class="btn btn-outline-teal btn-sm">Start</a>
+          </div>
+
+          <div style="background:var(--sand-050);padding:12px 16px;border-radius:var(--radius-sm);border:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;">
+            <div>
+              <b style="color:var(--ink-900);">GAD-7</b>
+              <div style="font-size:0.78rem;color:var(--ink-600);">Generalized Anxiety Disorder Scale</div>
+            </div>
+            <a href="screening.html" class="btn btn-outline-teal btn-sm">Start</a>
+          </div>
+
+          <div style="background:var(--sand-050);padding:12px 16px;border-radius:var(--radius-sm);border:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;">
+            <div>
+              <b style="color:var(--ink-900);">CES-D</b>
+              <div style="font-size:0.78rem;color:var(--ink-600);">Epidemiologic Depression Scale</div>
+            </div>
+            <a href="screening.html" class="btn btn-outline-teal btn-sm">Start</a>
+          </div>
+        </div>
+
+        <div style="font-size:0.78rem;color:var(--ink-400);display:flex;align-items:center;gap:6px;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#2E6F6B" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Encrypted client-side. Scores never sold or used for ad profiling.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metric / System Stats Banner -->
+  <section class="container">
+    <div class="stats-banner">
+      <div class="stat-item">
+        <div class="stat-number">24 / 7</div>
+        <div class="stat-label">Tele-MANAS Integration (14416)</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">20+</div>
+        <div class="stat-label">Major Indian Metros Covered</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">10+</div>
+        <div class="stat-label">Pharma Companies &amp; Jan Aushadhi</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">DPDP</div>
+        <div class="stat-label">Act 2023 Consent Architecture</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Four Pillars of MindCare AI -->
+  <section class="section">
+    <div class="container">
+      <div style="text-align:center;max-width:720px;margin:0 auto 48px;">
+        <div class="eyebrow">Medical Architecture</div>
+        <h2>Clinical Navigation Built on Evidence</h2>
+        <p>
+          Unlike ungrounded consumer chatbots, MindCare AI adheres to medical consensus guidelines, 
+          transparent pricing catalogs, and verified registry integrations.
+        </p>
+      </div>
+
+      <div class="grid-4">
+        <!-- Pillar 1: Doctor Directory & GPS -->
+        <div class="card">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/></svg>
+          </div>
+          <h3>GPS Doctor Directory</h3>
+          <p>
+            Locate verified psychiatrists and clinical psychologists near your GPS coordinates with interactive Leaflet map routing and NMC registration checks.
+          </p>
+          <a href="doctors.html" class="btn btn-ghost btn-sm" style="width:100%;margin-top:12px;">Explore Map &rarr;</a>
+        </div>
+
+        <!-- Pillar 2: Multi-Company Medicines -->
+        <div class="card">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 8v8M8 12h8"/></svg>
+          </div>
+          <h3>Medicine &amp; Pricing</h3>
+          <p>
+            Transparent directory of psychiatric medications across Sun Pharma, Cipla, Torrent, and Jan Aushadhi generic options with NPPA price benchmarks.
+          </p>
+          <a href="medicines.html" class="btn btn-ghost btn-sm" style="width:100%;margin-top:12px;">Compare Prices &rarr;</a>
+        </div>
+
+        <!-- Pillar 3: Validated Screening -->
+        <div class="card">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Clinical Screening</h3>
+          <p>
+            Standardized PHQ-9, GAD-7, and CES-D instruments with automatic item-9 crisis escalation directly to Tele-MANAS and national emergency hotlines.
+          </p>
+          <a href="screening.html" class="btn btn-ghost btn-sm" style="width:100%;margin-top:12px;">Take Assessment &rarr;</a>
+        </div>
+
+        <!-- Pillar 4: Secure RAG Journal -->
+        <div class="card">
+          <div class="feature-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>AES-256 Journal</h3>
+          <p>
+            Encrypted personal health diary featuring source-grounded RAG reflections that refuse ungrounded generation and track longitudinal mood trends.
+          </p>
+          <a href="journal.html" class="btn btn-ghost btn-sm" style="width:100%;margin-top:12px;">Start Journaling &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DPDP Act Trust Callout -->
+  <section class="section-tight">
+    <div class="container">
+      <div class="card" style="background:#FFFFFF;border:1px solid var(--line);padding:36px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;">
+          <div>
+            <div class="eyebrow">Digital Personal Data Protection Act, 2023</div>
+            <h2>Built on Radical Data Minimisation.</h2>
+            <p>
+              In accordance with Indian health informatics norms and DPDP 2023 regulations, 
+              your clinical records, screening sessions, and journal entries are isolated from identity profiles.
+            </p>
+            <ul style="list-style:none;margin-bottom:24px;display:flex;flex-direction:column;gap:10px;">
+              <li style="display:flex;align-items:center;gap:10px;font-size:0.92rem;color:var(--ink-700);">
+                <span style="color:var(--teal-700);font-weight:bold;">✓</span> Purpose-limited granular consent toggles
+              </li>
+              <li style="display:flex;align-items:center;gap:10px;font-size:0.92rem;color:var(--ink-700);">
+                <span style="color:var(--teal-700);font-weight:bold;">✓</span> Zero third-party tracker scripts or advertising pixels
+              </li>
+              <li style="display:flex;align-items:center;gap:10px;font-size:0.92rem;color:var(--ink-700);">
+                <span style="color:var(--teal-700);font-weight:bold;">✓</span> Immediate right to withdraw consent and request erasure
+              </li>
+            </ul>
+            <a href="privacy.html" class="btn btn-outline-teal">Review Privacy Architecture &rarr;</a>
+          </div>
+          <div style="background:var(--sand-050);padding:24px;border-radius:var(--radius-sm);border:1px solid var(--line);">
+            <h4 style="color:var(--teal-900);margin-bottom:12px;">Emergency Response Protocol</h4>
+            <p style="font-size:0.86rem;margin-bottom:16px;">
+              MindCare AI is an educational and navigation interface. If you or someone you know is in acute distress:
+            </p>
+            <div style="background:var(--rose-alert-bg);border:1px solid var(--rose-alert-border);border-radius:var(--radius-sm);padding:14px;margin-bottom:12px;">
+              <div style="font-size:0.8rem;color:var(--rose-alert);text-transform:uppercase;font-weight:700;letter-spacing:0.04em;">Toll-Free 24/7 Helpline</div>
+              <div style="font-size:1.35rem;font-weight:700;color:var(--rose-alert-dark);font-family:'Fraunces',Georgia,serif;">Tele-MANAS: 14416</div>
+              <div style="font-size:0.75rem;color:var(--rose-alert);">Ministry of Health &amp; Family Welfare, Govt. of India</div>
+            </div>
+            <div style="display:flex;justify-content:space-between;font-size:0.82rem;color:var(--ink-600);">
+              <span>National Emergency Number: <b style="color:var(--ink-900);">112</b></span>
+              <span>KIRAN Mental Health: <b style="color:var(--ink-900);">1800-599-0019</b></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- User Experience & Website Reviews Section -->
+  <section class="section" style="background:linear-gradient(180deg, var(--sand-050) 0%, #FFFFFF 100%);border-top:1px solid var(--line);">
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:36px;flex-wrap:wrap;gap:16px;">
+        <div>
+          <div class="eyebrow">Community &amp; User Feedback</div>
+          <h2 style="margin-bottom:8px;">User Experience &amp; Reviews</h2>
+          <p style="margin:0;color:var(--ink-600);font-size:0.95rem;">
+            Real feedback from patients, caregivers, and clinicians using MindCare AI across India.
+          </p>
+        </div>
+        <div style="display:flex;align-items:center;gap:16px;">
+          <div id="review-stats-badge" style="background:#FFFFFF;border:1px solid var(--line);padding:8px 16px;border-radius:var(--radius-sm);display:flex;align-items:center;gap:10px;box-shadow:var(--shadow-sm);">
+            <span style="color:#f59e0b;font-size:1.2rem;font-weight:bold;">★ 4.9</span>
+            <span style="font-size:0.82rem;color:var(--ink-600);" id="review-stats-text">Loading ratings...</span>
+          </div>
+          <button class="btn btn-primary" onclick="openReviewModal()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            Give Website Review
+          </button>
+        </div>
+      </div>
+
+      <!-- Filter Pills for Reviews -->
+      <div style="display:flex;gap:8px;margin-bottom:24px;overflow-x:auto;padding-bottom:8px;" id="review-filter-pills">
+        <button class="pill pill-teal active-filter" data-type="" onclick="filterReviews(this, '')">All Reviews</button>
+        <button class="pill pill-ghost" data-type="screening" onclick="filterReviews(this, 'screening')">Screening Tools</button>
+        <button class="pill pill-ghost" data-type="doctor_finder" onclick="filterReviews(this, 'doctor_finder')">Doctor Directory</button>
+        <button class="pill pill-ghost" data-type="journal" onclick="filterReviews(this, 'journal')">Encrypted Journal</button>
+        <button class="pill pill-ghost" data-type="medicines" onclick="filterReviews(this, 'medicines')">Medicine Directory</button>
+        <button class="pill pill-ghost" data-type="ui_design" onclick="filterReviews(this, 'ui_design')">UI &amp; Design</button>
+      </div>
+
+      <!-- Reviews Grid Container -->
+      <div id="reviews-grid" class="grid-3" style="display:grid;gap:20px;grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));">
+        <div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--ink-400);">Loading community reviews...</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Modal for Submitting Website Reviews -->
+  <div id="review-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(15,23,42,0.6);backdrop-filter:blur(4px);z-index:9999;align-items:center;justify-content:center;padding:16px;">
+    <div style="background:#FFFFFF;border-radius:12px;max-width:540px;width:100%;padding:32px;box-shadow:0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);position:relative;">
+      <button onclick="closeReviewModal()" style="position:absolute;top:20px;right:20px;background:none;border:none;font-size:1.5rem;color:var(--ink-400);cursor:pointer;">&times;</button>
+      <h3 style="margin-bottom:6px;color:var(--ink-900);">Share Your Website Experience</h3>
+      <p style="font-size:0.88rem;color:var(--ink-600);margin-bottom:20px;">
+        How was your experience navigating MindCare AI? Your feedback helps us improve patient accessibility.
+      </p>
+
+      <form id="review-form" onsubmit="submitReview(event)">
+        <div style="margin-bottom:16px;">
+          <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:6px;color:var(--ink-800);">Your Name / Alias *</label>
+          <input type="text" id="rev-author" required placeholder="e.g. Priya M. or Anonymous" style="width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:var(--radius-sm);font-size:0.95rem;">
+        </div>
+
+        <div style="margin-bottom:16px;">
+          <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:6px;color:var(--ink-800);">Rating *</label>
+          <div id="star-picker" style="display:flex;gap:8px;font-size:1.8rem;cursor:pointer;color:#d1d5db;">
+            <span data-star="1" onclick="setStarRating(1)">★</span>
+            <span data-star="2" onclick="setStarRating(2)">★</span>
+            <span data-star="3" onclick="setStarRating(3)">★</span>
+            <span data-star="4" onclick="setStarRating(4)">★</span>
+            <span data-star="5" onclick="setStarRating(5)">★</span>
+          </div>
+          <input type="hidden" id="rev-rating" value="5">
+        </div>
+
+        <div style="margin-bottom:16px;">
+          <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:6px;color:var(--ink-800);">Feature Category</label>
+          <select id="rev-type" style="width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:var(--radius-sm);font-size:0.95rem;background:#FFF;">
+            <option value="general">General Platform Experience</option>
+            <option value="screening">Clinical Screening Tools (PHQ-9 / GAD-7)</option>
+            <option value="doctor_finder">GPS Doctor Directory</option>
+            <option value="journal">AES-256 Encrypted Journal</option>
+            <option value="medicines">Medicine Pricing Directory</option>
+            <option value="ui_design">UI &amp; Visual Design</option>
+          </select>
+        </div>
+
+        <div style="margin-bottom:24px;">
+          <label style="display:block;font-size:0.85rem;font-weight:600;margin-bottom:6px;color:var(--ink-800);">Your Review / Comments *</label>
+          <textarea id="rev-comment" required rows="4" placeholder="Tell us what worked well or what can be improved..." style="width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:var(--radius-sm);font-size:0.95rem;resize:vertical;"></textarea>
+        </div>
+
+        <div style="display:flex;justify-content:flex-end;gap:12px;">
+          <button type="button" class="btn btn-ghost" onclick="closeReviewModal()">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="submit-review-btn">Submit Review</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="../assets/js/common.js"></script>
+<script>
+let currentSelectedRating = 5;
+let currentFilterType = '';
+
+function openReviewModal() {
+  const modal = document.getElementById('review-modal');
+  if (modal) {
+    modal.style.display = 'flex';
+    setStarRating(5);
+  }
+}
+
+function closeReviewModal() {
+  const modal = document.getElementById('review-modal');
+  if (modal) modal.style.display = 'none';
+}
+
+function setStarRating(rating) {
+  currentSelectedRating = rating;
+  document.getElementById('rev-rating').value = rating;
+  const stars = document.querySelectorAll('#star-picker span');
+  stars.forEach(s => {
+    const val = parseInt(s.getAttribute('data-star'), 10);
+    s.style.color = val <= rating ? '#f59e0b' : '#d1d5db';
+  });
+}
+
+function filterReviews(btn, type) {
+  currentFilterType = type;
+  document.querySelectorAll('#review-filter-pills button').forEach(b => {
+    b.className = 'pill pill-ghost';
+  });
+  btn.className = 'pill pill-teal active-filter';
+  loadReviews(type);
+}
+
+async function loadReviews(type = '') {
+  const grid = document.getElementById('reviews-grid');
+  if (!grid) return;
+
+  try {
+    const url = `/api/reviews${type ? '?type=' + encodeURIComponent(type) : ''}`;
+    const res = await fetch(url);
+    const data = await res.json();
+
+    if (!res.ok) throw new Error(data.error || 'Failed to load reviews.');
+
+    // Update stats badge
+    const statsBadge = document.getElementById('review-stats-badge');
+    const statsText = document.getElementById('review-stats-text');
+    if (statsBadge && statsText && data.stats) {
+      statsBadge.querySelector('span').textContent = `★ ${data.stats.avg_rating}`;
+      statsText.textContent = `${data.stats.total_reviews} Community Reviews`;
+    }
+
+    if (!data.reviews || data.reviews.length === 0) {
+      grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--ink-400);">No reviews found in this category yet. Be the first to share your feedback!</div>`;
+      return;
+    }
+
+    const typeLabels = {
+      general: 'General Experience',
+      screening: 'Screening Tools',
+      doctor_finder: 'Doctor Directory',
+      journal: 'Encrypted Journal',
+      medicines: 'Medicine Directory',
+      ui_design: 'UI & Design'
+    };
+
+    grid.innerHTML = data.reviews.map(r => {
+      const stars = '★'.repeat(r.rating) + '☆'.repeat(5 - r.rating);
+      const catLabel = typeLabels[r.feedback_type] || r.feedback_type;
+      return `
+        <div class="card" style="background:#FFFFFF;border:1px solid var(--line);display:flex;flex-direction:column;justify-space-between;padding:24px;border-radius:12px;box-shadow:var(--shadow-sm);transition:transform 0.2s ease;">
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+              <span class="pill pill-teal" style="font-size:0.75rem;">${escapeHtml(catLabel)}</span>
+              <span style="color:#f59e0b;font-weight:bold;letter-spacing:2px;">${stars}</span>
+            </div>
+            <p style="font-size:0.92rem;color:var(--ink-800);line-height:1.5;margin-bottom:16px;font-style:italic;">
+              "${escapeHtml(r.comment)}"
+            </p>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid var(--sand-100);font-size:0.8rem;color:var(--ink-500);">
+            <div style="display:flex;align-items:center;gap:8px;">
+              <div style="width:28px;height:28px;border-radius:50%;background:var(--teal-100);color:var(--teal-900);display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:0.8rem;">
+                ${escapeHtml(r.author_name.charAt(0).toUpperCase())}
+              </div>
+              <span style="font-weight:600;color:var(--ink-900);">${escapeHtml(r.author_name)}</span>
+            </div>
+            <span>${formatDate(r.created_at)}</span>
+          </div>
+        </div>
+      `;
+    }).join('');
+  } catch (err) {
+    console.error('Error loading reviews:', err);
+    grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--rose-alert);">Failed to load community reviews. Please refresh.</div>`;
+  }
+}
+
+async function submitReview(event) {
+  event.preventDefault();
+  const submitBtn = document.getElementById('submit-review-btn');
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Submitting...';
+
+  try {
+    const author_name = document.getElementById('rev-author').value;
+    const rating = parseInt(document.getElementById('rev-rating').value, 10);
+    const feedback_type = document.getElementById('rev-type').value;
+    const comment = document.getElementById('rev-comment').value;
+
+    const res = await fetch('/api/reviews', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ author_name, rating, feedback_type, comment })
+    });
+
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Failed to submit review.');
+
+    toast('Thank you! Your website review has been submitted successfully.');
+    document.getElementById('review-form').reset();
+    closeReviewModal();
+    loadReviews(currentFilterType);
+  } catch (err) {
+    toast(err.message || 'Failed to submit review.');
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Submit Review';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadReviews();
+});
+</script>
+</body>
+</html>

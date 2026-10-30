@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validated Mental Health Screening Tools — MindCare AI</title>
+<meta name="description" content="Take validated psychometric screening tools including PHQ-9 for depression and GAD-7 for anxiety. Get evidence-based severity scores with immediate safety protocols.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site-header" id="site-header"></header>
+
+<main class="section-tight">
+  <div class="container" style="max-width:900px;">
+    <div style="margin-bottom:24px;">
+      <div class="eyebrow">Standardized Psychometric Instruments</div>
+      <h2>Clinical Self-Assessment Tools</h2>
+      <p style="margin:0;">
+        These instruments help identify symptom patterns over the preceding two weeks. 
+        Scores are calculated using standardized algorithms and serve as preparation for dialogue with medical professionals.
+      </p>
+    </div>
+
+    <!-- Clinical Disclaimer -->
+    <div class="disclaimer-box" id="screening-disclaimer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#00e5bf" stroke-width="2" style="flex-shrink:0;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      <div>
+        <b>Important Context:</b> Screening is a triage signal, not a definitive psychiatric diagnosis. High symptom burden scores indicate the clinical recommendation to consult a specialist. If you feel at risk of self-harm, direct crisis channels are available immediately.
+      </div>
+    </div>
+
+    <!-- Instruments Selection Grid -->
+    <div id="instrument-list" class="grid-2" style="margin-top:24px;">
+      <div class="card" style="text-align:center;padding:40px;">
+        <p>Loading validated screening tools…</p>
+      </div>
+    </div>
+
+    <!-- Active Questionnaire Flow -->
+    <div id="questionnaire-shell" style="display:none;margin-top:32px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+        <button class="btn btn-ghost btn-sm" id="back-to-list">&larr; Return to Instrument Catalog</button>
+        <span id="q-progress" class="pill pill-teal">Question 1 of 9</span>
+      </div>
+
+      <div class="card card-glow-teal" style="padding:32px;margin-bottom:24px;">
+        <h3 id="q-title" style="margin-bottom:6px;color:var(--text-primary);"></h3>
+        <p id="q-instruction" style="color:var(--text-muted);font-size:0.88rem;margin-bottom:24px;">
+          Over the last 2 weeks, how often have you been bothered by any of the following problems?
+        </p>
+
+        <form id="q-form"></form>
+      </div>
+    </div>
+
+    <!-- Score & Clinical Routing Result (Matching Screenshot) -->
+    <div id="result-shell" style="display:none;margin-top:24px;" class="score-result">
+      <div class="score-number" id="result-total">9</div>
+      <div class="score-band" id="result-band">Mild</div>
+      <p id="result-note" style="max-width:500px;margin:0 auto 20px;font-size:0.92rem;line-height:1.6;color:var(--ink-600);"></p>
+      
+      <div id="result-crisis" style="max-width:500px;margin:0 auto 20px;"></div>
+
+      <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:16px;">
+        <a href="dashboard.html" class="btn btn-ghost">Back to dashboard</a>
+        <button class="btn btn-primary" id="retake-btn">Take another tool</button>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="../assets/js/common.js"></script>
+<script src="../assets/js/screening.js"></script>
+</body>
+</html>
